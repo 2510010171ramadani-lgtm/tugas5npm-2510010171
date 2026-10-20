@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a365d;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-brand {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-right: 2rem;
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 1.2rem;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #63b3ed;
+}
+
+
+.konten {
+  padding-top: 70px; 
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+
+.header-toko {
+  text-align: center;
+  padding: 1.5rem 0 1rem;
+}
+
+.header-toko h1 {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 0.4rem;
+}
+
+.header-toko p {
+  color: #4a5568;
+  margin: 0;
+}
+
+
+.subjudul-sticky {
+  position: sticky;
+  top: 60px; 
+  background-color: #edf2f7;
+  color: #1a365d;
+  padding: 0.7rem 1rem;
+  margin: 1.5rem 0 1.2rem;
+  border-left: 5px solid #e53e3e;
+  border-radius: 0 6px 6px 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+.daftar-produk {
+  text-align: center; 
+  font-size: 0; 
+}
+
+
+.kartu {
+  position: relative; 
+  display: inline-block;
+  vertical-align: top;
+  width: 260px;
+  max-width: 260px;
+  margin: 12px;
+  padding: 14px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1rem; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+.kartu:hover {
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 4px;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-baru {
+  background-color: #38a169;
+}
+
+.badge-diskon {
+  background-color: #e53e3e;
+}
+
+.badge-terlaris {
+  background-color: #d69e2e;
+}
+
+
+.gambar-wrapper {
+  width: 100%;
+  height: 160px;
+  overflow: hidden; 
+  border-radius: 8px; 
+  margin-bottom: 12px;
+  background-color: #e2e8f0;
+}
+
+.gambar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.kartu:hover .gambar-wrapper img {
+  transform: scale(1.06);
+}
+
+
+.nama-produk {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1a365d;
+  margin: 0 0 6px;
+  line-height: 1.35;
+  min-height: 2.7em;
+}
+
+.harga {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #e53e3e;
+  margin: 0 0 12px;
+}
+
+
+.tombol-beli {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #1a365d;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+
+.tombol-beli:hover {
+  background-color: #2b6cb0;
+  transform: scale(1.02);
+}
+
+
+.bagian-kontak {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.bagian-kontak h2 {
+  color: #1a365d;
+  margin-top: 0;
+}
+
+
+.footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #1a365d;
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
